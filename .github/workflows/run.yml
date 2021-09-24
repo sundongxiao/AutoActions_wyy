@@ -5,6 +5,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
   schedule:
     - cron: 0 22,14 * * *
   # 每天运行两次，在上午 6 点和晚上 22 点。    
