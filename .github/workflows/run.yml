@@ -1,5 +1,8 @@
 name: 签到
 
+env: 
+  TZ: Asia/Shanghai
+
 on:
   push:
     branches: [ master ]
@@ -7,7 +10,7 @@ on:
     branches: [ master ]
   workflow_dispatch:
   schedule:
-    - cron: 0 22,14 * * *
+    - cron: 0 22,6 * * *
   # 每天运行两次，在上午 6 点和晚上 22 点。    
   watch:
     types: started
